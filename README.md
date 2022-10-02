@@ -1,3 +1,5 @@
 # UniCode
 Java and Python project repo for my university assignments.
-Garbage tier code, do not use them for your own sake.
+
+# Disclaimer
+Licensed under The Unlicense. You really shouldn't use the code in this repo for your own sake.
