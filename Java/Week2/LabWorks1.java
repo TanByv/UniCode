@@ -1,6 +1,6 @@
 package Java.Week2;
 
-public class Lab1 {
+public class LabWorks1 {
     public static void main(String[] args) // Main method
 
     // Using println command to print the letters into a new line
