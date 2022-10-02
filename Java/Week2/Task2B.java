@@ -50,8 +50,7 @@ public class Task2B {
                 System.out.println("New Zealand Dollar (NZD) Conversion: " + DefaultTRY/NZD);
 
             } else {    // Code for non empty input
-                try {
-                    
+
                 double UserTRY = Double.valueOf(UserInput);
                 System.out.println();
                 System.out.println("American Dollar (USD) Conversion: " + UserTRY/USD);
@@ -73,12 +72,11 @@ public class Task2B {
                 System.out.println("Hong Kong Dollar (HKD) Conversion: " + UserTRY/HKD);
                 System.out.println();
                 System.out.println("New Zealand Dollar (NZD) Conversion: " + UserTRY/NZD);
-
-                } catch (Exception e) {     // Catching the expection to prevent crash in case of input that is not a number
-                    System.out.println();
-                    System.out.println("Please enter a valid number.");
-                }
             } 
+
+        } catch (Exception e) {     // Catching the exception to prevent crash in case of input not being a number
+            System.out.println();
+            System.out.println("Please enter a valid number.");
         }
     }
 }
