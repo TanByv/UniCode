@@ -1,55 +1,61 @@
 package Java.Week2;
 
 import java.util.Scanner;
+import java.util.concurrent.CancellationException;
 
 public class Task2C {
     public static void main(String[] args) {
         
         try (Scanner input = new Scanner(System.in)) {
-            System.out.println("Please choose your input unit: \n [1] Miliseconds \n [2] Seconds \n [3] Minutes \n [4] Hours \n [5] Days \n [6] Weeks \n [7] Months \n [8] Years");
+            System.out.println("Please choose your input unit: \n [1] Miliseconds \n [2] Seconds \n [3] Minutes \n [4] Hours \n [5] Days");
 
             int UnitType = input.nextInt();
 
-            if (UnitType == 1) {
-                
-                // Do Nothing
+            System.out.println();
+            System.out.println("Please enter the amount of the unit you chose:");
 
-            } else if (UnitType == 2) {
-                
-                // Convert to miliseconds
+            double RawInput = input.nextDouble();
+            double CalcInput = 0;
 
-            } else if (UnitType == 3) {
+            if (UnitType == 1) {    // Milliseconds
                 
-                // Convert to miliseconds
+                CalcInput = RawInput;
 
-            } else if (UnitType == 4) {
+            } else if (UnitType == 2) {     // Seconds to Milliseconds
                 
-                // Convert to miliseconds
+                CalcInput = RawInput * 1000;
 
-            } else if (UnitType == 5) {
+            } else if (UnitType == 3) {     // Minutes to Milliseconds
                 
-                // Convert to miliseconds
+                CalcInput = RawInput * 60000;
 
-            } else if (UnitType == 6) {
+            } else if (UnitType == 4) {     // Hours to Milliseconds
                 
-                // Convert to miliseconds
+                CalcInput = RawInput * 3600000;
 
-            } else if (UnitType == 7) {
+            } else if (UnitType == 5) {     // Days to Milliseconds
                 
-                // Convert to miliseconds
-
-            } else if (UnitType == 8) {
-                
-                // Convert to miliseconds
+                CalcInput = RawInput * 86400000;
 
             } else {
                 
-                // Print "Enter valid option"
+                System.out.println("Choose a valid option. Example; 2");
 
             }
 
-            // Calculate using "%" remaining and convert miliseconds to everything else
+            double FinalMilliseconds = 0;
+            double FinalSeconds = 0;
+            double FinalMinutes = 0;
+            double FinalHours = 0;
+            double FinalDays = 0;
 
+            FinalMilliseconds = CalcInput % 1000;
+            FinalSeconds = (CalcInput / 1000) % 60;
+            FinalMinutes = (CalcInput / 60000) % 60;
+            FinalHours = (CalcInput / 3600000) % 24;
+            FinalDays = (CalcInput / 86400000);
+
+            System.out.println(FinalMilliseconds + " " + FinalSeconds + " " + FinalMinutes + " " + FinalHours + " " + FinalDays + " milli sec min hr day");
         }
     }
 }
