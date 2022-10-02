@@ -43,19 +43,14 @@ public class Task2C {
 
             }
 
-            double FinalMilliseconds = 0;
-            double FinalSeconds = 0;
-            double FinalMinutes = 0;
-            double FinalHours = 0;
-            double FinalDays = 0;
+            double FinalMilliseconds = CalcInput % 1000;
+            double FinalSeconds = (CalcInput / 1000) % 60;
+            double FinalMinutes = (CalcInput / 60000) % 60;
+            double FinalHours = (CalcInput / 3600000) % 24;
+            double FinalDays = (CalcInput / 86400000);
 
-            FinalMilliseconds = CalcInput % 1000;
-            FinalSeconds = (CalcInput / 1000) % 60;
-            FinalMinutes = (CalcInput / 60000) % 60;
-            FinalHours = (CalcInput / 3600000) % 24;
-            FinalDays = (CalcInput / 86400000);
-
-            System.out.println(FinalMilliseconds + " " + FinalSeconds + " " + FinalMinutes + " " + FinalHours + " " + FinalDays + " milli sec min hr day");
+            System.out.println();
+            System.out.println("Day(s): " + FinalDays + "\nHour(s): " + FinalHours + "\nMinute(s): " + FinalMinutes + "\nSecond(s): " + FinalSeconds + "\nMillisecond(s): " + FinalMilliseconds);
         }
     }
 }
