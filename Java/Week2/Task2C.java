@@ -1,7 +1,6 @@
 package Java.Week2;
 
 import java.util.Scanner;
-import java.util.concurrent.CancellationException;
 
 public class Task2C {
     public static void main(String[] args) {
