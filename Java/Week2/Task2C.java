@@ -47,8 +47,7 @@ public class Task2C {
             double FinalHours = ((CalcInput - (FinalMilliseconds + (FinalSeconds * 1000) + (FinalMinutes * 60000))) / 3600000) % 24;
             double FinalDays = ((CalcInput - (FinalMilliseconds + (FinalSeconds * 1000) + (FinalMinutes * 60000) + (FinalHours * 3600000))) / 86400000);
 
-            System.out.println();
-            System.out.println("Day(s): " + FinalDays + "\nHour(s): " + FinalHours + "\nMinute(s): " + FinalMinutes + "\nSecond(s): " + FinalSeconds + "\nMillisecond(s): " + FinalMilliseconds);
+            System.out.println("\nDay(s): " + FinalDays + "\nHour(s): " + FinalHours + "\nMinute(s): " + FinalMinutes + "\nSecond(s): " + FinalSeconds + "\nMillisecond(s): " + FinalMilliseconds);
     
 
         } catch (Exception e) {     // Catching the exception to prevent crash in case of input not being a valid number
