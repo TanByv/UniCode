@@ -12,18 +12,14 @@ public class Task2A {
             System.out.println("Please enter your weight in kilograms: ");
             double weight = input.nextDouble();
 
-            System.out.println("");
-
-            System.out.println("Please enter your height in meters: ");
+            System.out.println("\nPlease enter your height in meters: ");
             double height = input.nextDouble();
 
             // Calculate the BMI using the formula given and give the user their result
             double bmi = weight / (height*height);
-            
-            System.out.println("");
 
             // Limiting the amount of digits after the comma printed. Printing the entire double value causes a long and unpleasant to look at value for the user.  
-            System.out.printf("%.2f", bmi);
+            System.out.printf("\n%.2f", bmi);
             System.out.println(" is your BMI score.");
 
             // Give the user information about what category their BMI score falls under
