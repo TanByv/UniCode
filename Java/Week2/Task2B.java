@@ -8,7 +8,7 @@ public class Task2B {
         // Set the default value for the amount of Turkish Liras
         int DefaultTRY = 200;
 
-        // Set the exchange prices for ten different currencies. These are the top 10 traded currencies in 10/02/2022
+        // Set the exchange prices for ten different currencies. These are the top 10 traded currencies in 3/10/2022
         double USD = 18.5033 ;
         double EUR = 18.1397 ;
         double JPY = 0.127842 ;
