@@ -10,7 +10,15 @@ public class Task2C {
 
             int UnitType = input.nextInt();     // Take first input and set it as the unit type. This can range from 1 to 5
 
-            System.out.println("\nPlease enter the amount of the unit you chose:");
+            if (!(UnitType >= 1 && UnitType <= 5)) {
+                
+                System.out.println("\nPlease choose an valid option. Accepted range: 1 to 5");    // Error out if the input isn't an number from 1 to 5
+                System.exit(0);
+
+            } else {
+
+                System.out.println("\nPlease enter the amount of the unit you chose:");
+            }
 
             double RawInput = input.nextDouble();   // Now take the actual amount of the unit specified. Example: 10.75 hours
             double CalcInput = 0;                   // Create the double variable here so it can be accessed in the if statements
@@ -31,14 +39,9 @@ public class Task2C {
                 
                 CalcInput = RawInput * 3600000;
 
-            } else if (UnitType == 5) {     // Days to Milliseconds
+            } else {     // Days to Milliseconds
                 
                 CalcInput = RawInput * 86400000;
-
-            } else {
-                
-                System.out.println("Please enter a number between 1 and 5.");    // Error out if the input isn't an number from 1 to 5
-
             }
 
             double FinalMilliseconds = CalcInput % 1000;
