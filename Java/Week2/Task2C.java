@@ -10,8 +10,7 @@ public class Task2C {
 
             int UnitType = input.nextInt();     // Take first input and set it as the unit type. This can range from 1 to 5
 
-            System.out.println();
-            System.out.println("Please enter the amount of the unit you chose:");
+            System.out.println("\nPlease enter the amount of the unit you chose:");
 
             double RawInput = input.nextDouble();   // Now take the actual amount of the unit specified. Example: 10.75 hours
             double CalcInput = 0;                   // Create the double variable here so it can be accessed in the if statements
