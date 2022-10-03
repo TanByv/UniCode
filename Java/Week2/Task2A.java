@@ -44,6 +44,10 @@ public class Task2A {
                     System.out.println("Your BMI score is considered Obese.");
 
                 }
-        }
+
+        } catch (Exception e) {     // Catching the exception to prevent crash in case of input not being a valid number
+            System.out.println();
+            System.out.println("Please enter a valid number.");
+        } 
     }
 }

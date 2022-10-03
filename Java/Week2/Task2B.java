@@ -74,7 +74,7 @@ public class Task2B {
                 System.out.println("New Zealand Dollar (NZD) Conversion: " + UserTRY/NZD);
             } 
 
-        } catch (Exception e) {     // Catching the exception to prevent crash in case of input not being a number
+        } catch (Exception e) {     // Catching the exception to prevent crash in case of input not being a valid number
             System.out.println();
             System.out.println("Please enter a valid number.");
         }
