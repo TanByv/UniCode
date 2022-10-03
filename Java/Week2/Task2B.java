@@ -28,55 +28,34 @@ public class Task2B {
 
             if (UserInput == "") {  // Code for empty input 
                 
-                System.out.println();
-                System.out.println("American Dollar (USD) Conversion: " + DefaultTRY/USD);
-                System.out.println();
-                System.out.println("Euro (EUR) Conversion: " + DefaultTRY/EUR);
-                System.out.println();
-                System.out.println("Japanese Yen (JPY) Conversion: " + DefaultTRY/JPY);
-                System.out.println();
-                System.out.println("British Pound (GBP) Conversion: " + DefaultTRY/GBP);
-                System.out.println();
-                System.out.println("Australian Dollar (AUD) Conversion: " + DefaultTRY/AUD);
-                System.out.println();
-                System.out.println("Canadian Dollar (CAD) Conversion: " + DefaultTRY/CAD);
-                System.out.println();
-                System.out.println("Swiss Franc (CHF) Conversion: " + DefaultTRY/CHF);
-                System.out.println();
-                System.out.println("Chinese Yuan (CNY) Conversion: " + DefaultTRY/CNY);
-                System.out.println();
-                System.out.println("Hong Kong Dollar (HKD) Conversion: " + DefaultTRY/HKD);
-                System.out.println();
-                System.out.println("New Zealand Dollar (NZD) Conversion: " + DefaultTRY/NZD);
+                System.out.println("American Dollar (USD) Conversion: " + DefaultTRY/USD + "\n");
+                System.out.println("Euro (EUR) Conversion: " + DefaultTRY/EUR + "\n");
+                System.out.println("Japanese Yen (JPY) Conversion: " + DefaultTRY/JPY + "\n");
+                System.out.println("British Pound (GBP) Conversion: " + DefaultTRY/GBP + "\n");
+                System.out.println("Australian Dollar (AUD) Conversion: " + DefaultTRY/AUD + "\n");
+                System.out.println("Canadian Dollar (CAD) Conversion: " + DefaultTRY/CAD + "\n");
+                System.out.println("Swiss Franc (CHF) Conversion: " + DefaultTRY/CHF + "\n");
+                System.out.println("Chinese Yuan (CNY) Conversion: " + DefaultTRY/CNY + "\n");
+                System.out.println("Hong Kong Dollar (HKD) Conversion: " + DefaultTRY/HKD + "\n");
+                System.out.println("New Zealand Dollar (NZD) Conversion: " + DefaultTRY/NZD + "\n");
 
             } else {    // Code for non empty input
 
                 double UserTRY = Double.valueOf(UserInput);
-                System.out.println();
-                System.out.println("American Dollar (USD) Conversion: " + UserTRY/USD);
-                System.out.println();
-                System.out.println("Euro (EUR) Conversion: " + UserTRY/EUR);
-                System.out.println();
-                System.out.println("Japanese Yen (JPY) Conversion: " + UserTRY/JPY);
-                System.out.println();
-                System.out.println("British Pound (GBP) Conversion: " + UserTRY/GBP);
-                System.out.println();
-                System.out.println("Australian Dollar (AUD) Conversion: " + UserTRY/AUD);
-                System.out.println();
-                System.out.println("Canadian Dollar (CAD) Conversion: " + UserTRY/CAD);
-                System.out.println();
-                System.out.println("Swiss Franc (CHF) Conversion: " + UserTRY/CHF);
-                System.out.println();
-                System.out.println("Chinese Yuan (CNY) Conversion: " + UserTRY/CNY);
-                System.out.println();
-                System.out.println("Hong Kong Dollar (HKD) Conversion: " + UserTRY/HKD);
-                System.out.println();
-                System.out.println("New Zealand Dollar (NZD) Conversion: " + UserTRY/NZD);
+                System.out.println("\nAmerican Dollar (USD) Conversion: " + UserTRY/USD + "\n");
+                System.out.println("Euro (EUR) Conversion: " + UserTRY/EUR + "\n");
+                System.out.println("Japanese Yen (JPY) Conversion: " + UserTRY/JPY + "\n");
+                System.out.println("British Pound (GBP) Conversion: " + UserTRY/GBP + "\n");
+                System.out.println("Australian Dollar (AUD) Conversion: " + UserTRY/AUD + "\n");
+                System.out.println("Canadian Dollar (CAD) Conversion: " + UserTRY/CAD + "\n");
+                System.out.println("Swiss Franc (CHF) Conversion: " + UserTRY/CHF + "\n");
+                System.out.println("Chinese Yuan (CNY) Conversion: " + UserTRY/CNY + "\n");
+                System.out.println("Hong Kong Dollar (HKD) Conversion: " + UserTRY/HKD + "\n");
+                System.out.println("New Zealand Dollar (NZD) Conversion: " + UserTRY/NZD + "\n");
             } 
 
         } catch (Exception e) {     // Catching the exception to prevent crash in case of input not being a valid number
-            System.out.println();
-            System.out.println("Please enter a valid number.");
+            System.out.println("\nPlease enter a valid number.");
         }
     }
 }
