@@ -12,7 +12,7 @@ public class Task2C {
 
             if (!(UnitType >= 1 && UnitType <= 5)) {
                 
-                System.out.println("\nPlease choose an valid option. Options range from 1 to 5.");    // Error out if the input isn't an number from 1 to 5
+                System.out.println("\nPlease choose a valid option. Options range from 1 to 5.");    // Error out if the input isn't an number from 1 to 5
                 System.exit(0);
 
             } else {
