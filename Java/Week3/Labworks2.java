@@ -16,6 +16,9 @@ public class Labworks2 {
             System.out.print("The minimum runway length is ");  // Print the result while limiting the number printed to only 2 digits after the dot.
             System.out.printf("%.2f", Runway);
             System.out.print(" meters.");
-        }
+
+        } catch (Exception e) { // Catching the exception to prevent crash in case of input not being a valid number
+            System.out.println("Please enter a valid number.");
+        } 
     }
 }
