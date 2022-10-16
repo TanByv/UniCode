@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Labworks3 {
     public static void main(String[] args) {
-        
         double circleCenterX = 0;   // Define default values
         double circleCenterY = 0;
 
@@ -18,7 +17,6 @@ public class Labworks3 {
 
         try (Scanner input = new Scanner(System.in)) {
             System.out.println("Choose operating mode:\n [1] Use default values\n [2] Specify new values"); // Ask user for operation mode
-
             int operationMode = input.nextInt();
 
             if (operationMode == 1) {   // Intended mode, use default values
