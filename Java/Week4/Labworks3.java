@@ -16,7 +16,6 @@ public class Labworks3 {
         double rectangleWidth = 8;
         double rectangleHeight = 4;
 
-
         try (Scanner input = new Scanner(System.in)) {
             System.out.println("Choose operating mode:\n [1] Use default values\n [2] Specify new values"); // Ask user for operation mode
 
