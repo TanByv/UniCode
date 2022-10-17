@@ -6,8 +6,7 @@ public class Task4A {
     public static void main(String[] args) {
         
         try (Scanner input = new Scanner(System.in)) {
-            System.out.print("Enter number xd: ");
-             
+            System.out.print("Please enter a year: "); // Ask user for input
             int userNum = input.nextInt();
 
             if ((userNum % 400 == 0) || ((userNum % 4 == 0) && (userNum % 100 != 0))) { // Check if year is divisible by 400 or divisible by 4 but not by 100
