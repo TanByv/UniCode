@@ -4,12 +4,9 @@ import java.util.Scanner;
 
 public class Task4B {
     public static void main(String[] args) {
-        
         int prizeFull = (int)(Math.random() * 90 + 10); // Type cast [0,1) double type number to integer while expanding the range to 10-99 
         int prize10s = (int)(prizeFull / 10);   // Find the 10s digit of the winning number
         int prize1s = prizeFull % 10;   // Find the 1s digit of the winning number
-
-        System.out.println(prizeFull + " " + prize10s + " " + prize1s);
 
         try (Scanner input = new Scanner(System.in)) {
             System.out.print("Enter a number between 10 and 99: "); // Take user input
