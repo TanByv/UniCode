@@ -18,7 +18,7 @@ public class Task4A {
                 System.out.println("Year " + userNum + " is not a leap year."); // Test Fails
             }
 
-        }  catch (Exception e) { // Catching the exception to prevent crash in case of input not being a valid number
+        } catch (Exception e) { // Catching the exception to prevent crash in case of input not being a valid number
             System.out.println("Please enter a valid number.");
         }   
     }
