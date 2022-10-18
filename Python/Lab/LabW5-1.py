@@ -1,0 +1,5 @@
+print("123456789")
+print("{0:^5s}{1:<20s}{2:>6s}".format("Rank", "Player", "HR"))
+print("{0:^5n}{1:<20s}{2:>6n}".format(1, "Barry Bonds", 762.25))
+print("{0:^5n}{1:<20s}{2:>6n}".format(2, "Hank Aaron", 755.48))
+print("{0:^5n}{1:<20s}{2:>6n}".format(3, "Babe Ruth", 714.12))
