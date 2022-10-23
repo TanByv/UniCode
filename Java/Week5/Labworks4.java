@@ -43,7 +43,10 @@ public class Labworks4 {
                     correctAnswer = num1 / num2; // Set the correct answer using Division
                     System.out.print("\nWhat is " + num1 + " / " + num2 + "?: ");    // Ask user for input with the correct sign
                     break;
-            }
+                default: // Invalid option
+                    System.out.println("Invalid option. Please choose an option between 1 and 4.");
+                    System.exit(0);
+            }   
             
             int userAnswer = input.nextInt();
 
