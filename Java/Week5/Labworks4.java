@@ -22,32 +22,30 @@ public class Labworks4 {
 
             int correctAnswer = 0;  // Define correct answer
 
-            switch (quizMode) {
-                case 1: // Addition
+                if (quizMode == 1) { // Addition
                     correctAnswer = num1 + num2; // Set the correct answer using Addition
                     System.out.print("\nWhat is " + num1 + " + " + num2 + "?: ");    // Ask user for input with the correct sign
-                    break;
-                case 2: // Subtraction
+
+                } else if (quizMode == 2) { // Subtraction
                     correctAnswer = num1 - num2; // Set the correct answer using Subtraction
                     System.out.print("\nWhat is " + num1 + " - " + num2 + "?: ");    // Ask user for input with the correct sign
-                    break;
-                case 3: // Multiplication
+
+                } else if (quizMode == 3) { // Multiplication
                     correctAnswer = num1 * num2; // Set the correct answer using Multiplication
                     System.out.print("\nWhat is " + num1 + " * " + num2 + "?: ");    // Ask user for input with the correct sign
-                    break;
-                case 4: // Division
+
+                } else if (quizMode == 4) { // Division
                     while (!(num1 % num2 == 0)) {   // While loop to generate a combination of randomly generated number that would fully divide
                         num1 = (int)(Math.random() * 9 + 1);
                         num2 = (int)(Math.random() * 9 + 1);
                     }
                     correctAnswer = num1 / num2; // Set the correct answer using Division
                     System.out.print("\nWhat is " + num1 + " / " + num2 + "?: ");    // Ask user for input with the correct sign
-                    break;
-                default: // Invalid option
+
+                } else {
                     System.out.println("Invalid option. Please choose an option between 1 and 4.");
                     System.exit(0);
-            }   
-            
+                }
             int userAnswer = input.nextInt();
 
             if (userAnswer == correctAnswer) {  // Check if answer is correct and print result
