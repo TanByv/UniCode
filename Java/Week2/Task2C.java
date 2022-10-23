@@ -52,7 +52,6 @@ public class Task2C {
 
             System.out.println("\nDay(s): " + FinalDays + "\nHour(s): " + FinalHours + "\nMinute(s): " + FinalMinutes + "\nSecond(s): " + FinalSeconds + "\nMillisecond(s): " + FinalMilliseconds);
     
-
         } catch (Exception e) {     // Catching the exception to prevent crash in case of input not being a valid number
             System.out.println("\nPlease enter a valid number.");
         } 
