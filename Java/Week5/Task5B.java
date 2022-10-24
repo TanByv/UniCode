@@ -12,7 +12,10 @@ public class Task5B {
             double num2 = input.nextDouble();
 
             System.out.println(getMax(num1, num2) + " is bigger."); // Call the method "getMax" and print the result
-        }
+
+        } catch (Exception e) {     // Catching the exception to prevent crash in case of input not being a valid number
+            System.out.println("\nPlease enter a valid number.");
+        } 
     }
 
     public static double getMax(double x, double y) { // Compare inputted numbers and return the bigger one
