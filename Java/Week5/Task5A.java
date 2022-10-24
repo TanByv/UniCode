@@ -23,6 +23,6 @@ public class Task5A {
     }
 
     public static Boolean isLeapYear(int year) { // isLeapYear function that returns boolean expression
-        return (year % 400 == 0) || ( (year % 4 == 0) && (year % 100 !=0 ));
+        return (year % 400 == 0) || ((year % 4 == 0) && (year % 100 !=0 ));
     }
 }
