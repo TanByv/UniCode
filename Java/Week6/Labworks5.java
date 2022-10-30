@@ -14,11 +14,11 @@ public class Labworks5 {
             int side3 = input.nextInt();
 
             if (isValid(side1, side2, side3) == true) {
-                System.out.println("The perimeter of this triangle is " + getPerimeter(side1, side2, side3));   // Print the perimeter if isValid Function passed
+                System.out.println("\nThe perimeter of this triangle is " + getPerimeter(side1, side2, side3));   // Print the perimeter if isValid Function passed
                 System.out.print("The area of this triangle is ");  // Print the Area if isValid Function passed
                 System.out.printf("%.2f", getArea(side1, side2, side3));    // Format the getArea result to only include two digits after the seperator
             } else {
-                System.out.println("Invalid triangle.");    // isValid Function failed
+                System.out.println("\nInvalid triangle.");    // isValid Function failed
             }
 
         } catch (Exception e) { // Catching the exception to prevent crash in case of input not being a valid number
