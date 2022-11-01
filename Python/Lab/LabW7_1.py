@@ -13,3 +13,8 @@ def isPrime(num):
                 return False
             else:
                 return True
+    else:
+        return False
+    
+def square(x):
+        return x*x
