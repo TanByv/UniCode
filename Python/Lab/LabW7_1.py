@@ -6,8 +6,8 @@ def convert_fahrenheit_to_celsius(fahrenheit):
     celsius = (float(fahrenheit - 32) * 5 / 9)
     return celsius
 
-cel = eval(input("Enter celsius: "))
-print(convert_celsius_to_fahrenheit(cel), "fahrenheit")
+# cel = eval(input("Enter celsius: "))
+# print(convert_celsius_to_fahrenheit(cel), "fahrenheit")
 
-fer = eval(input("Enter fahrenheit: "))
-print(convert_fahrenheit_to_celsius(fer), "celsius")
+# fer = eval(input("Enter fahrenheit: "))
+# print(convert_fahrenheit_to_celsius(fer), "celsius")
