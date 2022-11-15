@@ -10,7 +10,7 @@ public class Task8C {
             System.out.print("Which term of the fibonacci sequence would you like to know?: ");
             int XD = input.nextInt();
             
-            System.err.println(fibonacciNth(XD));
+            System.out.println(fibonacciNth(XD));
 
         } catch (Exception e) { // Catching the exception to prevent crash in case of input not being a valid number
             System.out.println("\nPlease enter a valid number.");

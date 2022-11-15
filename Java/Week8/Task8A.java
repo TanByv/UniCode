@@ -9,7 +9,7 @@ public class Task8A {
             System.out.print("Enter a number: ");
             int XD = input.nextInt();
             
-            System.err.println(highestDivisor(XD));
+            System.out.println(highestDivisor(XD));
 
         } catch (Exception e) { // Catching the exception to prevent crash in case of input not being a valid number
             System.out.println("\nPlease enter a valid number.");
