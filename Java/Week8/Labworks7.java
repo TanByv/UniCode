@@ -10,7 +10,6 @@ public class Labworks7 {
 
             int userRows = input.nextInt();
             int rowCounter = 1; // Number of rows, starts from 1
-            int reverseCounter = userRows-1; // Counter for Part 3 which starts from 1 less of userRows
             
             for (int i = userRows; i > 0; i--) {
    
@@ -22,7 +21,7 @@ public class Labworks7 {
                     System.out.print(b);
                 }
    
-                for (int c = reverseCounter; c >= rowCounter; c--) { // Part 3: Print Part 2 in reverse without including the ending of it
+                for (int c = userRows-1; c >= rowCounter; c--) { // Part 3: Print Part 2 in reverse without including the ending of it
                     System.out.print(c);
                 }
    
