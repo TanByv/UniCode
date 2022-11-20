@@ -9,7 +9,7 @@ public class Labworks7 {
             System.out.print("Please specify the amount of rows to be created: "); // Take user input and set it as userRows
 
             int userRows = input.nextInt();
-            int rowCounter = 1; // Number of rows, starts from 1
+            int rowCounter = 1; // The row that is being printed, starts from 1
             
             for (int i = userRows; i > 0; i--) {
    
@@ -30,7 +30,7 @@ public class Labworks7 {
                 }
 
                 System.out.println(); // Create a new line
-                rowCounter += 1; // Increment the row number
+                rowCounter += 1; // Increment which row is being worked on
             }
 
         } catch (Exception e) { // Catching the exception to prevent crash in case of input not being a valid number
