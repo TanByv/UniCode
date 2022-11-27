@@ -16,7 +16,7 @@ public class Task9B {
         }   
     }
 
-    public static int sumOfDigits ( int num ) { 
+    public static int sumOfDigits (int num) { 
         int sum = 0;
 
         while (num!=0) {      // Find the digit and divide by 10 to process the next digit, repeat until last digit

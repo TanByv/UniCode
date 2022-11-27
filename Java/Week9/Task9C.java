@@ -9,7 +9,7 @@ public class Task9C {
             System.out.print("Please enter a number: ");
             int userNum = input.nextInt();
 
-            if (isPerfect(userNum) == true) {   // Pass the user input to the isPerfect function and check if it returns true
+            if (isArmstrong(userNum) == true) {   // Pass the user input to the isPerfect function and check if it returns true
 
                 System.out.println("\n" + userNum + " is a armstrong number!");
 
@@ -23,7 +23,7 @@ public class Task9C {
         } 
     }
 
-    public static Boolean isPerfect (int num) {
+    public static Boolean isArmstrong (int num) {
         int sum = 0;
         int rem = 0;
         int numOrg = num;
