@@ -24,8 +24,10 @@ public class Task9D {
     }
 
     public static Boolean isNarcissistic (int num) {
-        if (num < 0) return false;
-
+        if (num < 0) {
+            return false;
+        }
+        
         int digitCount = digitCounter(num);
         int sum = 0;
         int rem = 0;
