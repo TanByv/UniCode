@@ -22,7 +22,7 @@ public class Task8B {
         } 
     }
 
-    static boolean isPrime(int num) {
+    public static boolean isPrime(int num) {
 
         if (num < 2)
             return false;
