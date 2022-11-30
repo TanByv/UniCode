@@ -16,7 +16,7 @@ public class Task10A {
             }
         }
 
-        for (int i = 0; i < hahaXD.length; i++) {   // For loop to print values of all indexes in 
+        for (int i = 0; i < hahaXD.length; i++) {   // For loop to print values of all indexes
 
             System.out.print(hahaXD[i] + " ");
         }
