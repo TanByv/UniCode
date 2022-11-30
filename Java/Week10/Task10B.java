@@ -14,7 +14,7 @@ public class Task10B {
             }
         }
 
-        System.out.println("There are " + primeAmount + " prime numbers inside the given array.");  // Print the result
+        System.out.println("There are " + primeAmount + " prime numbers in the given array.");  // Print the result
     }
 
     public static boolean isPrime(int num) {
