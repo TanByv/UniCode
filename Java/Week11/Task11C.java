@@ -4,7 +4,7 @@ public class Task11C {
     public static void main(String[] args) {
         // The names array contains the names of the objects
         // The distances array contains the distances to the objects
-        String[] names = {"Istanbul", "Ankara", "İzmir", "Antalya"};
+        String[] names = {"İstanbul", "Ankara", "İzmir", "Antalya"};
         double[][] distances = {{0, 455, 480, 694}, {455, 0, 587, 475}, {480, 587, 0, 457}, {694, 475, 457, 0}};
 
         // Initialize the shortest and highest values to the first non-zero element
