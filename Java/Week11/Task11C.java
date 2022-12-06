@@ -2,6 +2,7 @@ package Java.Week11;
 
 public class Task11C {
     public static void main(String[] args) {
+        
         // The names array contains the names of the objects
         // The distances array contains the distances to the objects
         String[] names = {"İstanbul", "Ankara", "İzmir", "Antalya"};
