@@ -14,7 +14,10 @@ public class Task10A {
                 System.out.print("Enter number lol: ");
                 hahaXD[i] = input.nextInt();
             }
-        }
+
+        } catch (Exception e) { // Catching the exception to prevent crash in case of input not being a valid number
+            System.out.println("\nPlease enter a valid number.");
+        } 
 
         for (int i = 0; i < hahaXD.length; i++) {   // For loop to print values of all indexes
 
