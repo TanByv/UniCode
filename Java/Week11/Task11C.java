@@ -2,8 +2,9 @@ package Java.Week11;
 
 public class Task11C {
     public static void main(String[] args) {
-
+        // The names array contains the names of the objects
         // The distances array contains the distances to the objects
+        String[] names = {"Istanbul", "Ankara", "İzmir", "Antalya"};
         double[][] distances = {{0, 455, 480, 694}, {455, 0, 587, 475}, {480, 587, 0, 457}, {694, 475, 457, 0}};
 
         // Initialize the shortest and highest values to the first non-zero element
@@ -32,13 +33,7 @@ public class Task11C {
         }
 
         // Print the shortest and highest values and the names associated with them
-        System.out.println("Shortest distance: " + shortest + " (" + cities(min_i) + ", " + cities(min_j) + ")");
-        System.out.println("Longest distance: " + highest + " (" + cities(max_i) + ", " + cities(max_j) + ")");
-
-    }
-
-    public static String cities(int x) {
-        String[] names = {"Istanbul", "Ankara", "İzmir", "Antalya"};
-        return names[x];
+        System.out.println("Shortest distance: " + shortest + " (" + names[min_i] + ", " + names[min_j] + ")");
+        System.out.println("Longest distance: " + highest + " (" + names[max_i] + ", " + names[max_j] + ")");
     }
 }
