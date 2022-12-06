@@ -16,7 +16,6 @@ public class Task11C {
             for (int j = 0; j < distances[i].length; j++) {
 
                 if (distances[i][j] != 0) {
-
                     if (distances[i][j] < shortest) {
                         shortest = distances[i][j];
                         min_i=i;
