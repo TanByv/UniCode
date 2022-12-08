@@ -23,11 +23,11 @@ public class Task11D {
             for (int j = i+1; j < pointMatrix.length; j++) {
                 
                 // Extract the coordinates of the two points
-                x1 = pointMatrix[ i ][0];
-                y1 = pointMatrix[ i ][1];
-                x2 = pointMatrix[ j ][0];
-                y2 = pointMatrix[ j ][1];
-
+                x1 = pointMatrix[i][0];
+                y1 = pointMatrix[i][1];
+                x2 = pointMatrix[j][0];
+                y2 = pointMatrix[j][1];
+                
                 // Compute the distance between the two points
                 calcDist = distanceFunc(x1, y1, x2, y2);
 
