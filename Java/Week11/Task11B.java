@@ -10,7 +10,7 @@ public class Task11B {
             double[][][] crazyArray = new double[2][3][2];
 
             // Prompt the user
-            System.out.print("Enter 12 double values seperated by commas: ");
+            System.out.print("Enter 12 double values seperated by spaces: ");
 
             // Use a nested loop to read the input and populate the array
             for (int i = 0; i < crazyArray.length; i++) {
