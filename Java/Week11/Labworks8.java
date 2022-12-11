@@ -7,8 +7,7 @@ public class Labworks8 {
 
         // Fill the array with random numbers between 0 and 100
         for (int i = 0; i < numbers.length; i++) {
-            double random = Math.random();
-            numbers[i] = (int) (random * 100);
+            numbers[i] = (int)(Math.random() * 100);
         }
 
         // Print the array
