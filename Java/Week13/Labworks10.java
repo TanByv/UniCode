@@ -13,7 +13,7 @@ public class Labworks10 {
         }
 
         // Print the original array using the Arrays.toString() method
-        System.out.println("Original array: " + Arrays.toString(array));
+        System.out.println("Random array: " + Arrays.toString(array));
 
         // Count the occurrences of each possible value (the range [0, 9]) in the array
         int[] count = new int[10];
