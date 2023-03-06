@@ -1,0 +1,6 @@
+Create a new Random object, named "random", with the current time as its seed: 
+Random random = new Random(System.currentTimeMillis());
+
+
+Generate a random int number, named "randomNumber", between 1 and 100 using the Random object of question 1: 
+int randomNumber = random.nextInt(100) + 1;

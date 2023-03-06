@@ -1,0 +1,6 @@
+Create a new Date object named "currentDateAndTime": 
+Date currentDateAndTime = new Date();
+
+
+Print the current date and time using the toString() method: 
+System.out.println(currentDateAndTime.toString());
