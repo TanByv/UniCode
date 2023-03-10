@@ -1,6 +1,0 @@
-{
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "JavaOOP/Week3/Lab1/lib/stdlib.jar"
-    ]
-}
