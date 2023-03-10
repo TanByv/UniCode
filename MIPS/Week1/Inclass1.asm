@@ -33,6 +33,7 @@
         lw $a0, a
         syscall
 
-    Exit:	# Exit program
+    exit:
+        # Exit program
         li $v0, 10
         syscall

@@ -26,7 +26,7 @@
         add $t6, $t4, $t5
 
         # Store result in a[i]
-        sw $t6, 0($t0)          # a[i] = result
+        sw $t6, 0($t0)
 
         # Print the value of a[i]
         lw $a0, ($t0)
@@ -46,6 +46,7 @@
 
         j loop
 
-    exit: # Exit program
+    exit: 
+        # Exit program
         li $v0, 10
         syscall
