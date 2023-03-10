@@ -1,5 +1,5 @@
 # UniCode
-Java and Python project repo for my university assignments.
+Java, Python and MIPS Assembly project repo for my university assignments.
 
 # Disclaimer
 Licensed under The Unlicense. 
