@@ -1,0 +1,13 @@
+1) An opcode (short for "operation code") is a code that specifies the operation and its format to be performed by a computer's CPU. In other words, it is a binary code that represents a specific instruction in machine language. Each opcode is associated with a specific operation or function, such as adding two numbers, branching to a different part of the program, or loading data from memory.
+
+2) Instruction formats are the way in which instructions are represented in machine language. There are three instruction formats in MIPS: R-format, I-format, and J-format.
+
+R-format instructions are used for arithmetic and logical operations, as well as for register-to-register transfers. They have six fields: opcode, source register 1, source register 2, destination register, shift amount, and function code.
+I-format instructions are used for immediate arithmetic and logical operations, as well as for load and store instructions. They have four fields: opcode, source register, destination register or immediate value, and offset.
+J-format instructions are used for jump instructions. They have two fields: opcode and address.
+
+3) In MIPS, registers $v0 and $v1 are dedicated to return values from functions. They are also known as the "value registers". Their conventional names are "value 0" and "value 1". Yes, they can be used in calculations instead of returning values.
+
+4) R-format instructions in MIPS are differentiated by their function code field. The function code field is used to specify the specific operation to be performed, such as addition or subtraction.
+
+5) Register pressure refers to the number of registers that are being used by a program or function. In general, higher register pressure means that more registers are being used, which can lead to performance issues such as increased memory usage, slower execution, and more complex register allocation algorithms. To minimize register pressure, programmers can use techniques such as loop unrolling, function inlining, and register allocation optimization.
