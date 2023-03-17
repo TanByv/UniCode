@@ -6,7 +6,6 @@ public class Main {
         employee.setName("John");
         employee.setAge(30);
         employee.setSalary(60000);
-        double bonus = employee.calculateBonus();
-        System.out.println("Employee " + employee.getName() + " has a bonus of $" + bonus);
+        System.out.println("Employee " + employee.getName() + " has a bonus of $" + employee.calculateBonus());
     }
 }
