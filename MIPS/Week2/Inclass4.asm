@@ -20,18 +20,17 @@ input_loop:
 
     addi $t0, $t0, 4    # Increment array pointer by 4 bytes
     addi $t1, $t1, 1    # Increment loop counter
-    
     bne $t1, 4, input_loop   # If not at end of array, loop again
 
-    # Find maximum value in array
-    la $t0, array       # Load address of array into $t0
-    lw $t1, ($t0)       # Load first integer into $t1
+    la $t0, array       # Load address of array into $t0 again to reset pointer
+    lw $t1, ($t0)       # Load first integer into $t1 because its not used anymore
     addi $t0, $t0, 4    # Increment array pointer by 4 bytes
-    li $t2, 1           # Initialize loop counter to 1
+    li $t2, 1           # Initialize new loop counter to 1
 
 max_loop:
     lw $t3, ($t0)               # Load current array element into $t3
     bge $t3, $t1, update_max    # If current element is greater than max, update max
+    
     addi $t0, $t0, 4            # Increment array pointer by 4 bytes
     addi $t2, $t2, 1            # Increment loop counter
     bne $t2, 4, max_loop        # If not at end of array, loop again
@@ -52,6 +51,5 @@ print_result:
     move $a0, $t1   # Move maximum value into $a0
     syscall         # Print maximum value
 
-    # Exit program
     li $v0, 10      # System call for exit
     syscall         # Exit program
