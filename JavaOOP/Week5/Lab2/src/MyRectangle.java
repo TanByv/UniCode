@@ -17,39 +17,17 @@ public class MyRectangle {
         StdDraw.rectangle(x, y, halfW, halfH);
     }
 
-    boolean overlapping(MyRectangle r) {
+    // Hardcoded since we're forced to use the NonoverlappingRectangles template
+    public double distance(MyRectangle r) {
         double minDist = 0.003;
         double dx = Math.abs(this.x - r.x);
         double dy = Math.abs(this.y - r.y);
         double halfW = (this.w + r.w) / 2;
         double halfH = (this.h + r.h) / 2;
-        return dx < halfW + minDist && dy < halfH + minDist;
-    }
-
-    public double distance(MyRectangle r) {
-        double halfW1 = w / 2;
-        double halfH1 = h / 2;
-        double centerX1 = x + halfW1;
-        double centerY1 = y + halfH1;
-    
-        double halfW2 = r.w / 2;
-        double halfH2 = r.h / 2;
-        double centerX2 = r.x + halfW2;
-        double centerY2 = r.y + halfH2;
-    
-        double dx = Math.abs(centerX1 - centerX2);
-        double dy = Math.abs(centerY1 - centerY2);
-    
-        double halfW = halfW1 + halfW2;
-        double halfH = halfH1 + halfH2;
-    
-        if (dx < halfW && dy < halfH) {
-            return 0; // rectangles overlap
+        if (dx < halfW + minDist && dy < halfH + minDist) {
+            return 0;
         } else {
-            double horizontalDist = Math.max(dx - halfW, 0);
-            double verticalDist = Math.max(dy - halfH, 0);
-            return horizontalDist + verticalDist;
+            return 1;
         }
     }
-    
 }

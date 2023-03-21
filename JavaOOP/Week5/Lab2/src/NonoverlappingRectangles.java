@@ -1,16 +1,17 @@
-import java.util.Random;
+import java.util.Random; 
 
 public class NonoverlappingRectangles {
     public static void main(String[] args) {
         int canvasWidth = 500, canvasHeight = 500;
         StdDraw.setCanvasSize(canvasWidth, canvasHeight);
-        StdDraw.setScale(0, 1);
+        StdDraw.setScale(0, 1); 
         int N = 250;
-        MyRectangle[] rectangles = new MyRectangle[N];
-        Random randomGenerator = new Random();
-        double rMin = 0.02, rMax = 0.2;
-        int rectangleCount = 0;
 
+        MyRectangle[] rectangles = new MyRectangle[N];
+        Random randomGenerator = new Random(); 
+        double rMin = 0.02, rMax = 0.2; 
+
+        int rectangleCount = 0;
         while (rectangleCount < N) {
             double w = rMin + (rMax - rMin) * randomGenerator.nextDouble();
             double h = rMin + (rMax - rMin) * randomGenerator.nextDouble();
@@ -20,24 +21,24 @@ public class NonoverlappingRectangles {
             double minY = minDist + halfHeight, maxY = 1 - minY;
             double y = minY + (maxY - minY) * randomGenerator.nextDouble();
             MyRectangle newRectangle = new MyRectangle(x, y, w, h);
-            if (overlapping(newRectangle, rectangles)) {
-                continue;
-            }
+
+            if (overlapping(newRectangle, rectangles))
+                continue; 
+
             rectangles[rectangleCount++] = newRectangle;
             System.out.println("Rectangle count: " + rectangleCount);
-            newRectangle.draw();
+            newRectangle.draw(); 
         }
         System.out.println("\nProgram finished.");
     }
 
     public static boolean overlapping(MyRectangle r, MyRectangle[] rArray) {
-        for (MyRectangle rect : rArray) {
-            if (rect == null) {
+        for (MyRectangle rect : rArray) { 
+            if (rect == null)
                 break;
-            }
-            if (r.overlapping(rect)) {
+            double minDist = 0.003;
+            if (r.distance(rect) < minDist)
                 return true;
-            }
         }
         return false;
     }
