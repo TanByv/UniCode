@@ -1,5 +1,4 @@
 ## Macros
-
 # Printer Macro
 .macro print($string)
     la $a0, $string
