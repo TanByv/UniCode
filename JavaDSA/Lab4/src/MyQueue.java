@@ -9,7 +9,7 @@ public class MyQueue<E> {
 
 	private int first = 0;
 
-   @SuppressWarnings("unchecked")
+	@SuppressWarnings("unchecked")
 	public MyQueue(int capacity) {
 		data = (E[]) new Object[capacity];
 	}
@@ -41,7 +41,7 @@ public class MyQueue<E> {
 		size++;
 	}
 
-   @SuppressWarnings("unchecked")
+	@SuppressWarnings("unchecked")
 	private void ensureCapacity() {
 		if (size == data.length) {
 			E[] newData = (E[]) new Object[data.length * 2];
