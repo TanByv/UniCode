@@ -2,7 +2,6 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-
 public class BST<E> implements Iterable<E> {
 
    private class TreeNode {
